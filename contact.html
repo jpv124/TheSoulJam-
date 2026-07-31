@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - The Soul Jam Live Band</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">The Soul Jam</a>
+  <ul class="nav-links">
+    <li>
+      <a href="index.html">The Band ▾</a>
+      <div class="dropdown">
+        <a href="#">Instagram</a>
+        <a href="#">Live Videos</a>
+        <a href="#">Live Performances</a>
+        <a href="#">Venues Played</a>
+      </div>
+    </li>
+    <li>
+      <a href="index.html#services">Services ▾</a>
+      <div class="dropdown">
+        <a href="index.html#services">Wedding Receptions</a>
+        <a href="index.html#services">Private Events</a>
+        <a href="index.html#services">Corporate Events</a>
+        <a href="index.html#services">Themed Shows</a>
+        <a href="index.html#services">Ceremony Music</a>
+        <a href="index.html#services">Cocktail Music</a>
+        <a href="index.html#services">DJ After-Parties</a>
+      </div>
+    </li>
+    <li>
+      <a href="songs.html">Songs ▾</a>
+      <div class="dropdown">
+        <a href="songs.html#wedding-reception">Wedding Reception Songs</a>
+        <a href="songs.html#dance-party">Dance Party Songs</a>
+        <a href="songs.html#first-dance">First Dance Songs</a>
+        <a href="songs.html#parent-dance">Parent Dance Songs</a>
+        <a href="songs.html#ceremony">Ceremony Songs</a>
+        <a href="songs.html#cocktail">Cocktail Songs</a>
+      </div>
+    </li>
+    <li>
+      <a href="#">Reviews ▾</a>
+      <div class="dropdown">
+        <a href="#">Google Reviews</a>
+        <a href="#">The Knot Reviews</a>
+        <a href="#">WeddingWire Reviews</a>
+      </div>
+    </li>
+    <li><a href="contact.html" class="nav-cta">Inquire Now</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <span class="section-label">Get In Touch</span>
+  <h1>Let's Plan Your <em>Night</em></h1>
+  <p>Tell us about your event and we'll get back to you within one business day with availability and pricing.</p>
+</header>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div>
+        <span class="section-label">Contact Info</span>
+        <h2>We'd Love to <em>Hear</em> From You</h2>
+        <p style="margin-bottom:2.5rem;">Whether it's a wedding, corporate event, or private party — reach out and let's start planning an unforgettable night.</p>
+
+        <div class="contact-info-item">
+          <h4>Email</h4>
+          <a href="mailto:hello@thesouljam.com">hello@thesouljam.com</a>
+        </div>
+        <div class="contact-info-item">
+          <h4>Phone</h4>
+          <a href="tel:+18455550123">(845) 555-0123</a>
+        </div>
+        <div class="contact-info-item">
+          <h4>Based In</h4>
+          <span>Hudson Valley, NY — serving NY, NJ, CT &amp; beyond</span>
+        </div>
+        <div class="contact-info-item">
+          <h4>Follow Along</h4>
+          <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+          </div>
+          <div class="form-field">
+            <label for="date">Event Date</label>
+            <input type="date" id="date" name="date">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="event-type">Event Type</label>
+          <select id="event-type" name="event-type">
+            <option>Wedding Reception</option>
+            <option>Private Event</option>
+            <option>Corporate Event</option>
+            <option>Themed Show</option>
+            <option>Ceremony Music</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Tell Us About Your Event</label>
+          <textarea id="message" name="message" placeholder="Venue, guest count, vibe you're going for..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-filled">Send Inquiry</button>
+      </form>
+    </div>
+
+    <div class="contact-map">Hudson Valley, NY &amp; Surrounding Areas</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <span class="section-label">Prefer To Talk?</span>
+  <h2 style="font-family: var(--font-display); font-size: clamp(2.2rem,5vw,3.5rem);">Book a <em>Consultation</em></h2>
+  <div class="gold-divider"></div>
+  <p style="max-width: 480px; margin: 0 auto 2.5rem; text-align:center; color: rgba(255,255,255,0.85);">
+    Schedule a quick call and we'll walk you through pricing, availability, and how it all works.
+  </p>
+  <a href="tel:+18455550123" class="btn btn-filled">Call (845) 555-0123</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="font-size:1.2rem;">The Soul Jam</a>
+      <p>The best wedding &amp; event band in Hudson Valley. Serving NY, NJ, CT &amp; beyond. We throw unforgettable live music experiences.</p>
+      <div class="social-links" style="margin-top:1.2rem;">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>The Band</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Live Videos</a>
+      <a href="#">Live Performances</a>
+      <a href="#">Venues Played</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="index.html#services">Wedding Receptions</a>
+      <a href="index.html#services">Private Events</a>
+      <a href="index.html#services">Corporate Events</a>
+      <a href="index.html#services">Themed Shows</a>
+      <a href="index.html#services">Ceremony Music</a>
+      <a href="index.html#services">Cocktail Music</a>
+      <a href="index.html#services">DJ After-Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="contact.html">Inquire Now</a>
+      <a href="contact.html">Book Consultation</a>
+      <a href="mailto:hello@thesouljam.com">Email Us</a>
+      <a href="tel:+18455550123">(845) 555-0123</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Soul Jam. All rights reserved.</span>
+    <span>Serving Hudson Valley, NJ, CT &amp; beyond</span>
+  </div>
+</footer>
+
+</body>
+</html>
