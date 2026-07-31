@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Soul Jam Live Band</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">The Soul Jam Live Band</h1>
+      <nav class="nav">
+        <a href="#videos">Videos</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h2>Sounds. Movement. Community.</h2>
+          <p>Live band performances &amp; studio sessions — demo site showing a video carousel that plays each video fully before moving to the next. Videos are muted by default to allow autoplay where supported.</p>
+        </div>
+        <div id="videos" class="carousel" aria-roledescription="carousel" tabindex="0">
+          <div class="carousel-track">
+            <video class="carousel-item" data-index="0" muted playsinline preload="metadata" controlslist="nodownload" tabindex="0">
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <video class="carousel-item" data-index="1" muted playsinline preload="metadata" controlslist="nodownload" tabindex="0">
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <video class="carousel-item" data-index="2" muted playsinline preload="metadata" controlslist="nodownload" tabindex="0">
+              <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <button class="carousel-btn prev" aria-label="Previous video">‹</button>
+          <button class="carousel-btn next" aria-label="Next video">›</button>
+
+          <div class="carousel-dots" aria-hidden="false"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h3>About The Soul Jam</h3>
+        <p>The Soul Jam Live Band is a collective that blends funk, soul, and experimental grooves. This demo repo provides a front-end clone of a site layout and an autoplay-capable video carousel that advances only when a video finishes playing.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>Repository: jpv124/TheSoulJam-</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© The Soul Jam Live Band</div>
+  </footer>
+
+  <script src="js/carousel.js"></script>
+</body>
+</html>
