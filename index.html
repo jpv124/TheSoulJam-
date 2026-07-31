@@ -1,74 +1,419 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Soul Jam Live Band</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Soul Jam - Best Wedding & Event Band</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">The Soul Jam Live Band</h1>
-      <nav class="nav">
-        <a href="#videos">Videos</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">The Soul Jam</a>
+  <ul class="nav-links">
+    <li>
+      <a href="#">The Band ▾</a>
+      <div class="dropdown">
+        <a href="#">Instagram</a>
+        <a href="#">Live Videos</a>
+        <a href="#">Live Performances</a>
+        <a href="#">Venues Played</a>
+      </div>
+    </li>
+    <li>
+      <a href="#">Services ▾</a>
+      <div class="dropdown">
+        <a href="#">Wedding Receptions</a>
+        <a href="#">Private Events</a>
+        <a href="#">Corporate Events</a>
+        <a href="#">Themed Shows</a>
+        <a href="#">Ceremony Music</a>
+        <a href="#">Cocktail Music</a>
+        <a href="#">DJ After-Parties</a>
+      </div>
+    </li>
+    <li>
+      <a href="songs.html">Songs ▾</a>
+      <div class="dropdown">
+        <a href="songs.html#wedding-reception">Wedding Reception Songs</a>
+        <a href="songs.html#dance-party">Dance Party Songs</a>
+        <a href="songs.html#first-dance">First Dance Songs</a>
+        <a href="songs.html#parent-dance">Parent Dance Songs</a>
+        <a href="songs.html#ceremony">Ceremony Songs</a>
+        <a href="songs.html#cocktail">Cocktail Songs</a>
+      </div>
+    </li>
+    <li>
+      <a href="#">Reviews ▾</a>
+      <div class="dropdown">
+        <a href="#">Google Reviews</a>
+        <a href="#">The Knot Reviews</a>
+        <a href="#">WeddingWire Reviews</a>
+      </div>
+    </li>
+    <li><a href="contact.html" class="nav-cta">Inquire Now</a></li>
+  </ul>
+</nav>
+
+<!-- VIDEO CAROUSEL -->
+<section class="video-carousel" id="videos">
+  <div class="video-carousel-header">
+    <div>
+      <span class="section-label">Watch Us Live</span>
+      <h2>See the <em>Energy</em></h2>
     </div>
-  </header>
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prevBtn" aria-label="Previous">&#8592;</button>
+      <button class="carousel-btn" id="nextBtn" aria-label="Next">&#8594;</button>
+    </div>
+  </div>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h2>Sounds. Movement. Community.</h2>
-          <p>Live band performances &amp; studio sessions — demo site showing a video carousel that plays each video fully before moving to the next. Videos are muted by default to allow autoplay where supported.</p>
+  <div class="carousel-track-wrapper">
+    <div class="carousel-track" id="carouselTrack">
+
+      <!-- Slide 1 -->
+      <div class="video-slide" data-index="0">
+        <div class="video-slide-inner">
+          <video src="public/videos/vid1.mp4" autoplay muted loop playsinline></video>
+          <div class="video-overlay"></div>
         </div>
-        <div id="videos" class="carousel" aria-roledescription="carousel" tabindex="0">
-          <div class="carousel-track">
-            <video class="carousel-item" data-index="0" muted playsinline preload="metadata" controlslist="nodownload" tabindex="0">
-              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <video class="carousel-item" data-index="1" muted playsinline preload="metadata" controlslist="nodownload" tabindex="0">
-              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <video class="carousel-item" data-index="2" muted playsinline preload="metadata" controlslist="nodownload" tabindex="0">
-              <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <button class="carousel-btn prev" aria-label="Previous video">‹</button>
-          <button class="carousel-btn next" aria-label="Next video">›</button>
-
-          <div class="carousel-dots" aria-hidden="false"></div>
+        <div class="video-slide-meta">
+          <p class="video-slide-title">Wedding Reception Highlights</p>
+          <span class="video-slide-sub">The Plaza, New York</span>
         </div>
       </div>
-    </section>
 
-    <section id="about" class="section about">
-      <div class="container">
-        <h3>About The Soul Jam</h3>
-        <p>The Soul Jam Live Band is a collective that blends funk, soul, and experimental grooves. This demo repo provides a front-end clone of a site layout and an autoplay-capable video carousel that advances only when a video finishes playing.</p>
+      <!-- Slide 2 -->
+      <div class="video-slide" data-index="1">
+        <div class="video-slide-inner">
+          <video src="public/videos/vid2.mp4" autoplay muted loop playsinline></video>
+          <div class="video-overlay"></div>
+        </div>
+        <div class="video-slide-meta">
+          <p class="video-slide-title">Dance Party Set</p>
+          <span class="video-slide-sub">Cipriani, New York</span>
+        </div>
       </div>
-    </section>
 
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h3>Contact</h3>
-        <p>Repository: jpv124/TheSoulJam-</p>
+      <!-- Slide 3 -->
+      <div class="video-slide" data-index="2">
+        <div class="video-slide-inner">
+          <video src="public/videos/vid3.mp4" autoplay muted loop playsinline></video>
+          <div class="video-overlay"></div>
+        </div>
+        <div class="video-slide-meta">
+          <p class="video-slide-title">Corporate Gala Performance</p>
+          <span class="video-slide-sub">583 Park Avenue</span>
+        </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">© The Soul Jam Live Band</div>
-  </footer>
+    </div><!-- /carousel-track -->
+  </div>
 
-  <script src="js/carousel.js"></script>
+  <div class="carousel-dots" id="carouselDots"></div>
+</section>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-eyebrow">Hudson Valley's Premier Wedding & Event Band</span>
+  <h1>Let's <em>Dance</em></h1>
+  <p class="hero-sub">
+    High-energy dance parties and world-class live music for weddings, corporate events &amp; more. No lip-synching, no backing tracks — just unforgettable nights.
+  </p>
+  <a href="#contact" class="btn btn-filled">Inquire Now</a>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img"></div>
+      <div>
+        <span class="section-label">About Us</span>
+        <h2>World-Class Musicians. <em>Unforgettable</em> Nights.</h2>
+        <p>
+          We are the best wedding &amp; event band in Hudson Valley. We throw high-energy dance parties and provide the finest live music for weddings, corporate events &amp; more.
+        </p>
+        <p>
+          We create magical live music experiences that will keep your guests on the dance floor all night long. No lip-synching, no backing tracks, no gimmicks — just world-class musicians throwing a personalized dance party.
+        </p>
+        <p style="margin-bottom: 2rem;">We primarily serve the tri-state/greater Hudson Valley region but will travel anywhere.</p>
+        <a href="#services" class="btn">Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- AWARDS -->
+<section class="awards">
+  <div class="container">
+    <span class="section-label">Recognition</span>
+    <h2>Award-<em>Winning</em> Excellence</h2>
+    <div class="gold-divider"></div>
+    <p style="max-width: 520px; margin: 0 auto; text-align: center;">
+      Winners of The Knot Best of Weddings and WeddingWire Couples' Choice Awards every year since 2016 — recognizing the top 5% of wedding vendors nationwide.
+    </p>
+    <div class="awards-row">
+      <div class="award-badge">
+        <div class="award-icon">The Knot<br>Hall of<br>Fame</div>
+        <span class="award-year">Hall of Fame</span>
+      </div>
+      <div class="award-badge">
+        <div class="award-icon">The Knot<br>Best of<br>Weddings</div>
+        <span class="award-year">2026</span>
+      </div>
+      <div class="award-badge">
+        <div class="award-icon">WeddingWire<br>Couples'<br>Choice</div>
+        <span class="award-year">2026</span>
+      </div>
+      <div class="award-badge">
+        <div class="award-icon">The Knot<br>Best of<br>Weddings</div>
+        <span class="award-year">2025</span>
+      </div>
+      <div class="award-badge">
+        <div class="award-icon">WeddingWire<br>Couples'<br>Choice</div>
+        <span class="award-year">2025</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonial-section">
+  <div class="container">
+    <span class="section-label">Testimonials</span>
+    <h2>What Our <em>Clients</em> Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          Aside from actually getting married, one of the main goals of our wedding was to have a packed dance floor the entire evening. They delivered! The artists were so talented and personable.
+        </p>
+        <span class="testimonial-author">— Maria</span>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          We were nervous about a live band, but the musicians that came for our event were by far the best wedding band we've ever experienced. Many of our guests said the same.
+        </p>
+        <span class="testimonial-author">— Daryl</span>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          As a musician, I was nervous about hiring a wedding band that would be too "canned." They were the total opposite — the musicians played with complete care and devotion.
+        </p>
+        <span class="testimonial-author">— Allison</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <span class="section-label">What We Offer</span>
+    <h2>Our <em>Services</em></h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-num">01</span>
+        <p class="service-name">Wedding Receptions</p>
+        <p class="service-desc">Full evening of live music that keeps your guests dancing from first dance to last call.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">02</span>
+        <p class="service-name">Private Events</p>
+        <p class="service-desc">Tailored performances for private parties, milestone celebrations, and exclusive gatherings.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">03</span>
+        <p class="service-name">Corporate Events</p>
+        <p class="service-desc">Elevate company events with premium live entertainment that impresses every guest.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">04</span>
+        <p class="service-name">Themed Shows</p>
+        <p class="service-desc">Custom-curated set lists around a specific era, genre, or theme for a unique experience.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">05</span>
+        <p class="service-name">Ceremony Music</p>
+        <p class="service-desc">Beautiful live music for processionals, recessionals, and everything in between.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">06</span>
+        <p class="service-name">Cocktail Hour</p>
+        <p class="service-desc">Sophisticated background music that sets the mood while guests mingle and celebrate.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">07</span>
+        <p class="service-name">DJ After-Parties</p>
+        <p class="service-desc">Seamlessly extend the night with a DJ set after the live performance wraps up.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">08</span>
+        <p class="service-name">Rehearsal Dinners</p>
+        <p class="service-desc">Start the wedding weekend right with intimate live music at your rehearsal dinner.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip">
+  <div class="photo-strip-item">
+    <img src="public/images/band1.jpeg" alt="Live performance photo" loading="lazy">
+  </div>
+  <div class="photo-strip-item">
+    <img src="public/images/band2.jpeg" alt="Live performance photo" loading="lazy">
+  </div>
+  <div class="photo-strip-item">
+    <img src="public/images/band3.jpeg" alt="Live performance photo" loading="lazy">
+  </div>
+  <div class="photo-strip-item">
+    <img src="public/images/band4.jpeg" alt="Live performance photo" loading="lazy">
+  </div>
+</div>
+
+<!-- LIVE SHOWS -->
+<section class="shows">
+  <div class="container" style="max-width:600px; text-align:center;">
+    <span class="section-label">On Stage</span>
+    <h2>Live <em>Shows</em></h2>
+    <div class="gold-divider"></div>
+    <p>See us perform live. Track upcoming performances and get notified when we're playing near you.</p>
+    <br>
+    <a href="#" class="btn">Get Notified</a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <span class="section-label">Get In Touch</span>
+  <h2 style="font-family: var(--font-display); font-size: clamp(2.2rem,5vw,3.5rem);">Ready to <em>Party</em>?</h2>
+  <div class="gold-divider"></div>
+  <p style="max-width: 480px; margin: 0 auto 2.5rem; text-align:center; color: rgba(240,236,228,0.8);">
+    Tell us about your event and let's start planning the night your guests will never forget.
+  </p>
+  <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+    <a href="contact.html" class="btn btn-filled">Inquire Now</a>
+    <a href="contact.html" class="btn">Book a Consultation</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="font-size:1.2rem;">The Soul Jam</a>
+      <p>The best wedding &amp; event band in Hudson Valley. Serving NY, NJ, CT &amp; beyond. We throw unforgettable live music experiences.</p>
+      <div class="social-links" style="margin-top:1.2rem;">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>The Band</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Live Videos</a>
+      <a href="#">Live Performances</a>
+      <a href="#">Venues Played</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#">Wedding Receptions</a>
+      <a href="#">Private Events</a>
+      <a href="#">Corporate Events</a>
+      <a href="#">Themed Shows</a>
+      <a href="#">Ceremony Music</a>
+      <a href="#">Cocktail Music</a>
+      <a href="#">DJ After-Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="contact.html">Inquire Now</a>
+      <a href="contact.html">Book Consultation</a>
+      <a href="mailto:hello@thesouljam.com">Email Us</a>
+      <a href="tel:+18455550123">(845) 555-0123</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Soul Jam. All rights reserved.</span>
+    <span>Serving Hudson Valley, NJ, CT &amp; beyond</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const track      = document.getElementById('carouselTrack');
+  const slides     = track.querySelectorAll('.video-slide');
+  const dotsEl     = document.getElementById('carouselDots');
+  const prevBtn    = document.getElementById('prevBtn');
+  const nextBtn    = document.getElementById('nextBtn');
+
+  const TOTAL      = slides.length;
+  const GAP        = 0;
+  let current      = 0;
+  let autoTimer;
+
+  /* ── Build dots ── */
+  for (let i = 0; i < TOTAL; i++) {
+    const d = document.createElement('button');
+    d.className = 'carousel-dot' + (i === 0 ? ' is-active' : '');
+    d.setAttribute('aria-label', `Go to slide ${i + 1}`);
+    d.addEventListener('click', () => { goTo(i); resetAuto(); });
+    dotsEl.appendChild(d);
+  }
+  const dots = dotsEl.querySelectorAll('.carousel-dot');
+
+  function slideWidth() {
+    /* One slide = full wrapper width */
+    return track.parentElement.clientWidth;
+  }
+
+  function goTo(index) {
+    current = (index + TOTAL) % TOTAL;
+    const offset = current * slideWidth();
+    track.style.transform = `translateX(-${offset}px)`;
+    dots.forEach((d, i) => d.classList.toggle('is-active', i === current));
+  }
+
+  function next() { goTo(current + 1); }
+  function prev() { goTo(current - 1); }
+
+  function resetAuto() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(next, 5000);
+  }
+
+  prevBtn.addEventListener('click', () => { prev(); resetAuto(); });
+  nextBtn.addEventListener('click', () => { next(); resetAuto(); });
+
+  /* ── Click overlay → unmute + enable controls ── */
+  slides.forEach(slide => {
+    const overlay = slide.querySelector('.video-overlay');
+    const video   = slide.querySelector('video');
+    overlay.addEventListener('click', () => {
+      video.muted    = false;
+      video.controls = true;
+      overlay.classList.add('is-playing');
+      slide.classList.add('is-active');
+    });
+  });
+
+  /* ── Init ── */
+  goTo(0);
+  resetAuto();
+
+  /* Recalculate on resize */
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => goTo(current), 100);
+  });
+})();
+</script>
+
 </body>
 </html>

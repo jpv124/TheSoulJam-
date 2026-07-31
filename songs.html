@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Song List - The Soul Jam Live Band</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">The Soul Jam</a>
+  <ul class="nav-links">
+    <li>
+      <a href="index.html">The Band ▾</a>
+      <div class="dropdown">
+        <a href="#">Instagram</a>
+        <a href="#">Live Videos</a>
+        <a href="#">Live Performances</a>
+        <a href="#">Venues Played</a>
+      </div>
+    </li>
+    <li>
+      <a href="index.html#services">Services ▾</a>
+      <div class="dropdown">
+        <a href="index.html#services">Wedding Receptions</a>
+        <a href="index.html#services">Private Events</a>
+        <a href="index.html#services">Corporate Events</a>
+        <a href="index.html#services">Themed Shows</a>
+        <a href="index.html#services">Ceremony Music</a>
+        <a href="index.html#services">Cocktail Music</a>
+        <a href="index.html#services">DJ After-Parties</a>
+      </div>
+    </li>
+    <li>
+      <a href="songs.html" class="is-active">Songs ▾</a>
+      <div class="dropdown">
+        <a href="#wedding-reception">Wedding Reception Songs</a>
+        <a href="#dance-party">Dance Party Songs</a>
+        <a href="#first-dance">First Dance Songs</a>
+        <a href="#parent-dance">Parent Dance Songs</a>
+        <a href="#ceremony">Ceremony Songs</a>
+        <a href="#cocktail">Cocktail Songs</a>
+      </div>
+    </li>
+    <li>
+      <a href="#">Reviews ▾</a>
+      <div class="dropdown">
+        <a href="#">Google Reviews</a>
+        <a href="#">The Knot Reviews</a>
+        <a href="#">WeddingWire Reviews</a>
+      </div>
+    </li>
+    <li><a href="contact.html" class="nav-cta">Inquire Now</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <span class="section-label">Our Repertoire</span>
+  <h1>The <em>Song</em> List</h1>
+  <p>A sample of what we play — from first dance to last call. Don't see your favorite? We learn custom requests for every event.</p>
+</header>
+
+<!-- SONGS -->
+<section class="songs-section">
+  <div class="container">
+
+    <div class="songs-filter" id="songsFilter">
+      <button class="is-active" data-target="all">All</button>
+      <button data-target="wedding-reception">Wedding Reception</button>
+      <button data-target="dance-party">Dance Party</button>
+      <button data-target="first-dance">First Dance</button>
+      <button data-target="parent-dance">Parent Dance</button>
+      <button data-target="ceremony">Ceremony</button>
+      <button data-target="cocktail">Cocktail</button>
+    </div>
+
+    <!-- Wedding Reception -->
+    <div class="songs-category" id="wedding-reception" data-category="wedding-reception">
+      <h3 class="songs-category-title">Wedding <em>Reception</em></h3>
+      <p>High-energy favorites that fill the floor all night long.</p>
+      <div class="songs-list">
+        <div class="song-row"><span class="song-title">Uptown Funk</span><span class="song-artist">Mark Ronson ft. Bruno Mars</span></div>
+        <div class="song-row"><span class="song-title">September</span><span class="song-artist">Earth, Wind &amp; Fire</span></div>
+        <div class="song-row"><span class="song-title">I Wanna Dance with Somebody</span><span class="song-artist">Whitney Houston</span></div>
+        <div class="song-row"><span class="song-title">Signed, Sealed, Delivered</span><span class="song-artist">Stevie Wonder</span></div>
+        <div class="song-row"><span class="song-title">Mr. Brightside</span><span class="song-artist">The Killers</span></div>
+        <div class="song-row"><span class="song-title">Shut Up and Dance</span><span class="song-artist">Walk the Moon</span></div>
+        <div class="song-row"><span class="song-title">Don't Stop 'Til You Get Enough</span><span class="song-artist">Michael Jackson</span></div>
+        <div class="song-row"><span class="song-title">Levitating</span><span class="song-artist">Dua Lipa</span></div>
+      </div>
+    </div>
+
+    <!-- Dance Party -->
+    <div class="songs-category" id="dance-party" data-category="dance-party">
+      <h3 class="songs-category-title">Dance <em>Party</em></h3>
+      <p>Non-stop grooves for a packed dance floor.</p>
+      <div class="songs-list">
+        <div class="song-row"><span class="song-title">Get Lucky</span><span class="song-artist">Daft Punk ft. Pharrell</span></div>
+        <div class="song-row"><span class="song-title">Blurred Lines</span><span class="song-artist">Robin Thicke</span></div>
+        <div class="song-row"><span class="song-title">Superstition</span><span class="song-artist">Stevie Wonder</span></div>
+        <div class="song-row"><span class="song-title">24K Magic</span><span class="song-artist">Bruno Mars</span></div>
+        <div class="song-row"><span class="song-title">Sweet Caroline</span><span class="song-artist">Neil Diamond</span></div>
+        <div class="song-row"><span class="song-title">Can't Stop the Feeling!</span><span class="song-artist">Justin Timberlake</span></div>
+        <div class="song-row"><span class="song-title">Good as Hell</span><span class="song-artist">Lizzo</span></div>
+        <div class="song-row"><span class="song-title">Play That Funky Music</span><span class="song-artist">Wild Cherry</span></div>
+      </div>
+    </div>
+
+    <!-- First Dance -->
+    <div class="songs-category" id="first-dance" data-category="first-dance">
+      <h3 class="songs-category-title">First <em>Dance</em></h3>
+      <p>Intimate, romantic songs for your first dance as a married couple.</p>
+      <div class="songs-list">
+        <div class="song-row"><span class="song-title">At Last</span><span class="song-artist">Etta James</span></div>
+        <div class="song-row"><span class="song-title">Perfect</span><span class="song-artist">Ed Sheeran</span></div>
+        <div class="song-row"><span class="song-title">Thinking Out Loud</span><span class="song-artist">Ed Sheeran</span></div>
+        <div class="song-row"><span class="song-title">Can't Help Falling in Love</span><span class="song-artist">Elvis Presley</span></div>
+        <div class="song-row"><span class="song-title">A Thousand Years</span><span class="song-artist">Christina Perri</span></div>
+        <div class="song-row"><span class="song-title">Make You Feel My Love</span><span class="song-artist">Adele</span></div>
+      </div>
+    </div>
+
+    <!-- Parent Dance -->
+    <div class="songs-category" id="parent-dance" data-category="parent-dance">
+      <h3 class="songs-category-title">Parent <em>Dance</em></h3>
+      <p>Timeless picks for father-daughter and mother-son dances.</p>
+      <div class="songs-list">
+        <div class="song-row"><span class="song-title">My Girl</span><span class="song-artist">The Temptations</span></div>
+        <div class="song-row"><span class="song-title">What a Wonderful World</span><span class="song-artist">Louis Armstrong</span></div>
+        <div class="song-row"><span class="song-title">The Way You Look Tonight</span><span class="song-artist">Frank Sinatra</span></div>
+        <div class="song-row"><span class="song-title">You Are the Sunshine of My Life</span><span class="song-artist">Stevie Wonder</span></div>
+        <div class="song-row"><span class="song-title">I Loved Her First</span><span class="song-artist">Heartland</span></div>
+      </div>
+    </div>
+
+    <!-- Ceremony -->
+    <div class="songs-category" id="ceremony" data-category="ceremony">
+      <h3 class="songs-category-title">Ceremony <em>Music</em></h3>
+      <p>Elegant live music for processionals, recessionals, and the moments in between.</p>
+      <div class="songs-list">
+        <div class="song-row"><span class="song-title">Canon in D</span><span class="song-artist">Pachelbel</span></div>
+        <div class="song-row"><span class="song-title">A Thousand Years</span><span class="song-artist">Christina Perri</span></div>
+        <div class="song-row"><span class="song-title">Clair de Lune</span><span class="song-artist">Debussy</span></div>
+        <div class="song-row"><span class="song-title">Marry Me</span><span class="song-artist">Train</span></div>
+        <div class="song-row"><span class="song-title">Wedding March</span><span class="song-artist">Mendelssohn</span></div>
+      </div>
+    </div>
+
+    <!-- Cocktail -->
+    <div class="songs-category" id="cocktail" data-category="cocktail">
+      <h3 class="songs-category-title">Cocktail <em>Hour</em></h3>
+      <p>Sophisticated background music that sets the mood while guests mingle.</p>
+      <div class="songs-list">
+        <div class="song-row"><span class="song-title">Fly Me to the Moon</span><span class="song-artist">Frank Sinatra</span></div>
+        <div class="song-row"><span class="song-title">L-O-V-E</span><span class="song-artist">Nat King Cole</span></div>
+        <div class="song-row"><span class="song-title">Isn't She Lovely</span><span class="song-artist">Stevie Wonder</span></div>
+        <div class="song-row"><span class="song-title">Ain't No Sunshine</span><span class="song-artist">Bill Withers</span></div>
+        <div class="song-row"><span class="song-title">Sunday Morning</span><span class="song-artist">Maroon 5</span></div>
+        <div class="song-row"><span class="song-title">Valerie</span><span class="song-artist">Amy Winehouse</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <span class="section-label">Don't See Your Song?</span>
+  <h2 style="font-family: var(--font-display); font-size: clamp(2.2rem,5vw,3.5rem);">We Learn <em>Custom</em> Requests</h2>
+  <div class="gold-divider"></div>
+  <p style="max-width: 480px; margin: 0 auto 2.5rem; text-align:center; color: rgba(255,255,255,0.85);">
+    Send us your must-play list and we'll build the perfect set for your night.
+  </p>
+  <a href="contact.html" class="btn btn-filled">Inquire Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="font-size:1.2rem;">The Soul Jam</a>
+      <p>The best wedding &amp; event band in Hudson Valley. Serving NY, NJ, CT &amp; beyond. We throw unforgettable live music experiences.</p>
+      <div class="social-links" style="margin-top:1.2rem;">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>The Band</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Live Videos</a>
+      <a href="#">Live Performances</a>
+      <a href="#">Venues Played</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="index.html#services">Wedding Receptions</a>
+      <a href="index.html#services">Private Events</a>
+      <a href="index.html#services">Corporate Events</a>
+      <a href="index.html#services">Themed Shows</a>
+      <a href="index.html#services">Ceremony Music</a>
+      <a href="index.html#services">Cocktail Music</a>
+      <a href="index.html#services">DJ After-Parties</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="contact.html">Inquire Now</a>
+      <a href="contact.html">Book Consultation</a>
+      <a href="mailto:hello@thesouljam.com">Email Us</a>
+      <a href="tel:+18455550123">(845) 555-0123</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Soul Jam. All rights reserved.</span>
+    <span>Serving Hudson Valley, NJ, CT &amp; beyond</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const buttons = document.querySelectorAll('#songsFilter button');
+  const categories = document.querySelectorAll('.songs-category');
+
+  function applyFilter(target) {
+    categories.forEach(cat => {
+      cat.style.display = (target === 'all' || cat.dataset.category === target) ? '' : 'none';
+    });
+    buttons.forEach(b => b.classList.toggle('is-active', b.dataset.target === target));
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.target));
+  });
+
+  function filterFromHash() {
+    const hash = window.location.hash.replace('#', '');
+    if (hash && document.getElementById(hash)) {
+      applyFilter(hash);
+      document.getElementById(hash).scrollIntoView({ block: 'start' });
+    }
+  }
+  window.addEventListener('hashchange', filterFromHash);
+  filterFromHash();
+})();
+</script>
+
+</body>
+</html>
