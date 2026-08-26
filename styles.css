@@ -50,6 +50,12 @@ nav {
   white-space: nowrap;
 }
 
+.nav-logo img {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
 .nav-links {
   display: flex;
   gap: 0;
@@ -242,7 +248,7 @@ p { color: var(--text-muted); margin-bottom: 1rem; }
 /* ─── VIDEO CAROUSEL ─── */
 .video-carousel {
   background: var(--bg);
-  padding: 6rem 0 3rem;
+  padding: 10rem 0 3rem;
   overflow: hidden;
 }
 
